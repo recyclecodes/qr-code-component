@@ -13,6 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        "qr": "0 4px 6px -1px hsl(220,15%,55%)",
+      },
+      colors: {
+        "qr-white": "hsl(0, 0%, 100%)",
+        "light-gray": "hsl(212,45%,89%)",
+        "grayish-blue":"hsl(220,15%,55%)",
+        "dark-blue":"hsl(218,44%,22%)"
+      },
     },
   },
   plugins: [],

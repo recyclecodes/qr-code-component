@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="icon" href="/images/favicon-32x32.png" />
+      </head>
+      <body
+        className={`bg-light-gray text-dark-blue flex flex-col justify-center items-center min-h-screen min-w-screen ${outfit.className}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
